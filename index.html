@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChocoWorld - Premium Chocolate & Candy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">ChocoWorld</div>
+                <div class="nav-links">
+                    <a href="#chocolate" class="nav-link" data-section="chocolate">Chocolate</a>
+                    <a href="#jelly" class="nav-link" data-section="jelly">Jelly</a>
+                    <a href="#mixes" class="nav-link" data-section="mixes">Mixes</a>
+                </div>
+                <button class="cart-toggle" id="cartToggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Chocolate & Candy Collection</h1>
+                <p>Exquisite flavors from around the world. Delivery across Ukraine</p>
+                <button class="cta-button" onclick="scrollToSection('chocolate')">Shop Treats</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chocolate Section -->
+    <section class="products-section" id="chocolate">
+        <div class="container">
+            <div class="section-header">
+                <h2>Chocolate Collections</h2>
+                <p>17 exclusive premium chocolate sets</p>
+            </div>
+            <div class="products-grid">
+                <!-- Chocolate Product 1 -->
+                <div class="product-card" data-id="choc-1">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img chocolate-img">🍫</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Swiss Dark Collection</h3>
+                        <p class="product-desc">A set of 12 bars of Swiss dark chocolate (72-85% cocoa). Includes varieties from Venezuela, Ecuador and Madagascar.</p>
+                        <div class="product-meta">
+                            <span class="weight">600g</span>
+                            <span class="pieces">12 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩31,000</span>
+                            <button class="add-to-cart" data-name="Swiss Dark Collection" data-price="31000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 2 -->
+                <div class="product-card" data-id="choc-2">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🍫</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Belgian Praline Master</h3>
+                        <p class="product-desc">18 handmade Belgian pralines with fillings: hazelnut, almond, caramel, milk chocolate ganache.</p>
+                        <div class="product-meta">
+                            <span class="weight">450g</span>
+                            <span class="pieces">18 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩43,500</span>
+                            <button class="add-to-cart" data-name="Belgian Praline Master" data-price="43500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 3 -->
+                <div class="product-card" data-id="choc-3">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🌰</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Italian Gianduja Dream</h3>
+                        <p class="product-desc">Italian gianduja with Piedmont hazelnuts. 10 bars of milk and dark chocolate with nut paste.</p>
+                        <div class="product-meta">
+                            <span class="weight">500g</span>
+                            <span class="pieces">10 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩34,500</span>
+                            <button class="add-to-cart" data-name="Italian Gianduja Dream" data-price="34500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 4 -->
+                <div class="product-card" data-id="choc-4">
+                    <div class="product-image">
+                        <div class="product-badge">Hit</div>
+                        <div class="placeholder-img chocolate-img">🥥</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tropical White Fusion</h3>
+                        <p class="product-desc">White chocolate with coconut, mango, passion fruit and lime. 8 bars of 50g from French masters.</p>
+                        <div class="product-meta">
+                            <span class="weight">400g</span>
+                            <span class="pieces">8 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩26,500</span>
+                            <button class="add-to-cart" data-name="Tropical White Fusion" data-price="26500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 5 -->
+                <div class="product-card" data-id="choc-5">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🍊</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spanish Orange Delight</h3>
+                        <p class="product-desc">Dark chocolate 70% with candied Valencian orange and almonds. 15 bars of 40g.</p>
+                        <div class="product-meta">
+                            <span class="weight">600g</span>
+                            <span class="pieces">15 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩28,500</span>
+                            <button class="add-to-cart" data-name="Spanish Orange Delight" data-price="28500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 6 -->
+                <div class="product-card" data-id="choc-6">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">☕</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vienna Coffee Collection</h3>
+                        <p class="product-desc">Milk chocolate with espresso, cappuccino and mocha. 12 bars of Austrian production with real coffee.</p>
+                        <div class="product-meta">
+                            <span class="weight">480g</span>
+                            <span class="pieces">12 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩29,500</span>
+                            <button class="add-to-cart" data-name="Vienna Coffee Collection" data-price="29500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 7 -->
+                <div class="product-card" data-id="choc-7">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img chocolate-img">🌶️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mexican Chili Passion</h3>
+                        <p class="product-desc">Dark chocolate with chili, cinnamon and vanilla. Traditional Mayan recipe. 10 bars of 70% cocoa.</p>
+                        <div class="product-meta">
+                            <span class="weight">500g</span>
+                            <span class="pieces">10 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩32,000</span>
+                            <button class="add-to-cart" data-name="Mexican Chili Passion" data-price="32000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 8 -->
+                <div class="product-card" data-id="choc-8">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🍒</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cherry Brandy Elegance</h3>
+                        <p class="product-desc">Pralines with cherry in brandy, covered with dark chocolate. 20 handmade candies in a gift box.</p>
+                        <div class="product-meta">
+                            <span class="weight">400g</span>
+                            <span class="pieces">20 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩38,500</span>
+                            <button class="add-to-cart" data-name="Cherry Brandy Elegance" data-price="38500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 9 -->
+                <div class="product-card" data-id="choc-9">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🥜</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Pistachio Luxury</h3>
+                        <p class="product-desc">White and milk chocolate with Sicilian pistachio. 14 premium 50g bars.</p>
+                        <div class="product-meta">
+                            <span class="weight">700g</span>
+                            <span class="pieces">14 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩47,000</span>
+                            <button class="add-to-cart" data-name="Pistachio Luxury" data-price="47000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 10 -->
+                <div class="product-card" data-id="choc-10">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <div class="placeholder-img chocolate-img">🍓</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ruby Strawberry Fantasy</h3>
+                        <p class="product-desc">Pink ruby chocolate with freeze-dried strawberries and raspberries. 12 bars of a new generation of chocolate.</p>
+                        <div class="product-meta">
+                            <span class="weight">480g</span>
+                            <span class="pieces">12 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩40,000</span>
+                            <button class="add-to-cart" data-name="Ruby Strawberry Fantasy" data-price="40000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 11 -->
+                <div class="product-card" data-id="choc-11">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🧈</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Salted Caramel Bliss</h3>
+                        <p class="product-desc">Milk chocolate with salted caramel and sea salt from Brittany. 16 bars of French quality.</p>
+                        <div class="product-meta">
+                            <span class="weight">640g</span>
+                            <span class="pieces">16 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩30,500</span>
+                            <button class="add-to-cart" data-name="Salted Caramel Bliss" data-price="30500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 12 -->
+                <div class="product-card" data-id="choc-12">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🌰</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hazelnut Truffle Supreme</h3>
+                        <p class="product-desc">Truffles with hazelnut in dark chocolate 65%. Coated with cocoa powder. 24 handmade truffles.</p>
+                        <div class="product-meta">
+                            <span class="weight">480g</span>
+                            <span class="pieces">24 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩44,500</span>
+                            <button class="add-to-cart" data-name="Hazelnut Truffle Supreme" data-price="44500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 13 -->
+                <div class="product-card" data-id="choc-13">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img chocolate-img">🍯</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Honey Almond Delight</h3>
+                        <p class="product-desc">Milk chocolate with acacia honey and California almonds. 10 large 80g bars.</p>
+                        <div class="product-meta">
+                            <span class="weight">800g</span>
+                            <span class="pieces">10 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩33,000</span>
+                            <button class="add-to-cart" data-name="Honey Almond Delight" data-price="33000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 14 -->
+                <div class="product-card" data-id="choc-14">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🍫</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ecuador Single Origin</h3>
+                        <p class="product-desc">Single-origin chocolate from Ecuadorian cocoa beans. 6 bars of different strengths: 60%, 70%, 80%, 85%, 90%, 99%.</p>
+                        <div class="product-meta">
+                            <span class="weight">600g</span>
+                            <span class="pieces">6 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩49,500</span>
+                            <button class="add-to-cart" data-name="Ecuador Single Origin" data-price="49500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 15 -->
+                <div class="product-card" data-id="choc-15">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🍊</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Citrus Mix Premium</h3>
+                        <p class="product-desc">Dark chocolate with orange, lemon, lime and grapefruit. 12 bars with a citrus assortment.</p>
+                        <div class="product-meta">
+                            <span class="weight">540g</span>
+                            <span class="pieces">12 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩27,500</span>
+                            <button class="add-to-cart" data-name="Citrus Mix Premium" data-price="27500" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 16 -->
+                <div class="product-card" data-id="choc-16">
+                    <div class="product-image">
+                        <div class="product-badge">Hit</div>
+                        <div class="placeholder-img chocolate-img">🍪</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cookie Crunch Master</h3>
+                        <p class="product-desc">Milk chocolate with pieces of Oreo chocolate cookies and caramel. 15 bars of 60g.</p>
+                        <div class="product-meta">
+                            <span class="weight">900g</span>
+                            <span class="pieces">15 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩25,000</span>
+                            <button class="add-to-cart" data-name="Cookie Crunch Master" data-price="25000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chocolate Product 17 -->
+                <div class="product-card" data-id="choc-17">
+                    <div class="product-image">
+                        <div class="placeholder-img chocolate-img">🌹</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rose & Violet Elegance</h3>
+                        <p class="product-desc">White chocolate with rose and violet extract. French perfume collection. 8 elegant bars.</p>
+                        <div class="product-meta">
+                            <span class="weight">320g</span>
+                            <span class="pieces">8 bars</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩41,000</span>
+                            <button class="add-to-cart" data-name="Rose & Violet Elegance" data-price="41000" data-category="chocolate">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jelly/Gummy Section -->
+    <section class="products-section" id="jelly">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jelly & Gummy Collections</h2>
+                <p>15 premium jelly and gummy sets</p>
+            </div>
+            <div class="products-grid">
+                <!-- Jelly Product 1 -->
+                <div class="product-card" data-id="jelly-1">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img jelly-img">🍇</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>French Fruit Pâtes</h3>
+                        <p class="product-desc">French fruit pastes from real fruits: apricot, pear, black currant, raspberry. 300g assortment.</p>
+                        <div class="product-meta">
+                            <span class="weight">300g</span>
+                            <span class="pieces">24 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩23,500</span>
+                            <button class="add-to-cart" data-name="French Fruit Pâtes" data-price="23500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 2 -->
+                <div class="product-card" data-id="jelly-2">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🍊</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Turkish Delight Assorted</h3>
+                        <p class="product-desc">Real Turkish delight with pistachios, rose, lemon and pomegranate. Handmade, 400g.</p>
+                        <div class="product-meta">
+                            <span class="weight">400g</span>
+                            <span class="pieces">16 cubes</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩18,000</span>
+                            <button class="add-to-cart" data-name="Turkish Delight Assorted" data-price="18000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 3 -->
+                <div class="product-card" data-id="jelly-3">
+                    <div class="product-image">
+                        <div class="product-badge">Hit</div>
+                        <div class="placeholder-img jelly-img">🍓</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Berry Garden Collection</h3>
+                        <p class="product-desc">Marmalade from strawberries, raspberries, blackberries and blueberries. No artificial colors. 350g of natural marmalade.</p>
+                        <div class="product-meta">
+                            <span class="weight">350g</span>
+                            <span class="pieces">28 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩16,000</span>
+                            <button class="add-to-cart" data-name="Berry Garden Collection" data-price="16000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 4 -->
+                <div class="product-card" data-id="jelly-4">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🍋</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Citrus Burst Jellies</h3>
+                        <p class="product-desc">Citrus jellies: orange, mandarin, lemon, lime, grapefruit. Juicy taste and bright colors. 320g.</p>
+                        <div class="product-meta">
+                            <span class="weight">320g</span>
+                            <span class="pieces">32 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩13,500</span>
+                            <button class="add-to-cart" data-name="Citrus Burst Jellies" data-price="13500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 5 -->
+                <div class="product-card" data-id="jelly-5">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🍑</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tropical Paradise Mix</h3>
+                        <p class="product-desc">Tropical marmalade: mango, passion fruit, pineapple, papaya, lychee. Exotic fruits in every piece. 380g.</p>
+                        <div class="product-meta">
+                            <span class="weight">380g</span>
+                            <span class="pieces">30 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩18,500</span>
+                            <button class="add-to-cart" data-name="Tropical Paradise Mix" data-price="18500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 6 -->
+                <div class="product-card" data-id="jelly-6">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <div class="placeholder-img jelly-img">🍷</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Wine Gummy Selection</h3>
+                        <p class="product-desc">Wine gummies for adults: prosecco, champagne, rose, muscat. With natural wine. 280g.</p>
+                        <div class="product-meta">
+                            <span class="weight">280g</span>
+                            <span class="pieces">20 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩21,500</span>
+                            <button class="add-to-cart" data-name="Wine Gummy Selection" data-price="21500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 7 -->
+                <div class="product-card" data-id="jelly-7">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🌈</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rainbow Sour Worms</h3>
+                        <p class="product-desc">Sour worms in a sugar coating. 6 fruit flavors: apple, cherry, lemon, orange, grape, lime. 450g.</p>
+                        <div class="product-meta">
+                            <span class="weight">450g</span>
+                            <span class="pieces">45 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩11,500</span>
+                            <button class="add-to-cart" data-name="Rainbow Sour Worms" data-price="11500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 8 -->
+                <div class="product-card" data-id="jelly-8">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🐻</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gummy Bears Classic</h3>
+                        <p class="product-desc">Classic Haribo gummy bears. 12 premium quality flavors. Soft and juicy. 500g.</p>
+                        <div class="product-meta">
+                            <span class="weight">500g</span>
+                            <span class="pieces">~200 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩13,000</span>
+                            <button class="add-to-cart" data-name="Gummy Bears Classic" data-price="13000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 9 -->
+                <div class="product-card" data-id="jelly-9">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img jelly-img">🍬</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artisan Fruit Jellies</h3>
+                        <p class="product-desc">Artisanal marmalade from real fruit puree. Fig, quince, peach, plum. Gelatin-free. 320g.</p>
+                        <div class="product-meta">
+                            <span class="weight">320g</span>
+                            <span class="pieces">16 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩25,000</span>
+                            <button class="add-to-cart" data-name="Artisan Fruit Jellies" data-price="25000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 10 -->
+                <div class="product-card" data-id="jelly-10">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🍒</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cherry & Pomegranate Delight</h3>
+                        <p class="product-desc">Cherry and pomegranate marmalade. Rich taste, natural juice. Healthy antioxidants. 360g.</p>
+                        <div class="product-meta">
+                            <span class="weight">360g</span>
+                            <span class="pieces">24 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩16,500</span>
+                            <button class="add-to-cart" data-name="Cherry & Pomegranate Delight" data-price="16500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 11 -->
+                <div class="product-card" data-id="jelly-11">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🥭</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mango Tango Cubes</h3>
+                        <p class="product-desc">Alphonso mango puree cubes. Melting texture, intense taste. Indian quality. 300g.</p>
+                        <div class="product-meta">
+                            <span class="weight">300g</span>
+                            <span class="pieces">20 cubes</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩19,500</span>
+                            <button class="add-to-cart" data-name="Mango Tango Cubes" data-price="19500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 12 -->
+                <div class="product-card" data-id="jelly-12">
+                    <div class="product-image">
+                        <div class="product-badge">Hit</div>
+                        <div class="placeholder-img jelly-img">🍉</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Watermelon Slices</h3>
+                        <p class="product-desc">Watermelon marmalade slices. Realistic look and taste. Summer freshness all year round. 400g of juicy marmalade.</p>
+                        <div class="product-meta">
+                            <span class="weight">400g</span>
+                            <span class="pieces">16 slices</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩14,500</span>
+                            <button class="add-to-cart" data-name="Watermelon Slices" data-price="14500" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 13 -->
+                <div class="product-card" data-id="jelly-13">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🥥</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Coconut Jelly Bites</h3>
+                        <p class="product-desc">Coconut jelly in coconut flakes. A tropical dessert with a delicate texture. Thai quality. 350g.</p>
+                        <div class="product-meta">
+                            <span class="weight">350g</span>
+                            <span class="pieces">28 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩15,000</span>
+                            <button class="add-to-cart" data-name="Coconut Jelly Bites" data-price="15000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 14 -->
+                <div class="product-card" data-id="jelly-14">
+                    <div class="product-image">
+                        <div class="placeholder-img jelly-img">🍇</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Grape & Apple Mix</h3>
+                        <p class="product-desc">A combination of grape and green apple. Refreshing taste, perfect balance of sweetness and sourness. 380g.</p>
+                        <div class="product-meta">
+                            <span class="weight">380g</span>
+                            <span class="pieces">32 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩14,000</span>
+                            <button class="add-to-cart" data-name="Grape & Apple Mix" data-price="14000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jelly Product 15 -->
+                <div class="product-card" data-id="jelly-15">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img jelly-img">🫐</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Blueberry Wellness Gummies</h3>
+                        <p class="product-desc">Organic blueberry marmalade. Rich in antioxidants and vitamins. A healthy dessert. 280g.</p>
+                        <div class="product-meta">
+                            <span class="weight">280g</span>
+                            <span class="pieces">20 pcs</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩20,000</span>
+                            <button class="add-to-cart" data-name="Blueberry Wellness Gummies" data-price="20000" data-category="jelly">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mixes Section -->
+    <section class="products-section" id="mixes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mix & Combo Sets</h2>
+                <p>10 unique chocolate and jelly mixes</p>
+            </div>
+            <div class="products-grid">
+                <!-- Mix Product 1 -->
+                <div class="product-card" data-id="mix-1">
+                    <div class="product-image">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="placeholder-img mix-img">🎁</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ultimate Sweet Mix</h3>
+                        <p class="product-desc">Premium mix: 4 types of Belgian chocolate (dark, milk, white, ruby) + 3 types of French marmalade. The perfect combination. 800g of elite sweets.</p>
+                        <div class="product-meta">
+                            <span class="weight">800g</span>
+                            <span class="pieces">Chocolate: Swiss Dark, Belgian Milk, White Coconut, Ruby Berry + Marmalade: Fruit Pâtes, Berry Mix, Citrus</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩57,500</span>
+                            <button class="add-to-cart" data-name="Ultimate Sweet Mix" data-price="57500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 2 -->
+                <div class="product-card" data-id="mix-2">
+                    <div class="product-image">
+                        <div class="placeholder-img mix-img">🍫</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Chocolate Lovers Paradise</h3>
+                        <p class="product-desc">A mix for true chocolate connoisseurs: Swiss Dark 85%, Belgian Praline, Italian Gianduja, Mexican Chili, Ecuador Single Origin. 5 types of elite chocolate from around the world. 1000g.</p>
+                        <div class="product-meta">
+                            <span class="weight">1000g</span>
+                            <span class="pieces">5 collections: Switzerland, Belgium, Italy, Mexico, Ecuador</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩73,000</span>
+                            <button class="add-to-cart" data-name="Chocolate Lovers Paradise" data-price="73000" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 3 -->
+                <div class="product-card" data-id="mix-3">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img mix-img">🌟</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gourmet Jelly Collection</h3>
+                        <p class="product-desc">A collection for marmalade lovers: Turkish Delight, French Fruit Pâtes, Wine Gummies, Artisan Jellies. 4 premium sets. 900g of exquisite marmalade.</p>
+                        <div class="product-meta">
+                            <span class="weight">900g</span>
+                            <span class="pieces">4 sets: Turkey, France, Wine, Artisan</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩51,500</span>
+                            <button class="add-to-cart" data-name="Gourmet Jelly Collection" data-price="51500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 4 -->
+                <div class="product-card" data-id="mix-4">
+                    <div class="product-image">
+                        <div class="placeholder-img mix-img">🎉</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Party Starter Mega Box</h3>
+                        <p class="product-desc">A huge set for a party: 3 chocolate sets (Praline, Caramel, Cookie Crunch) + 4 marmalade sets (Sour Worms, Gummy Bears, Rainbow, Watermelon). 1200g of sweets.</p>
+                        <div class="product-meta">
+                            <span class="weight">1200g</span>
+                            <span class="pieces">7 sets for a large company</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩64,500</span>
+                            <button class="add-to-cart" data-name="Party Starter Mega Box" data-price="64500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 5 -->
+                <div class="product-card" data-id="mix-5">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        <div class="placeholder-img mix-img">💝</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Romantic Gift Set</h3>
+                        <p class="product-desc">Romantic set: Ruby Strawberry chocolate, Rose & Violet, Cherry Brandy candies + Berry Garden marmalade. Elegant gift packaging. 650g.</p>
+                        <div class="product-meta">
+                            <span class="weight">650g</span>
+                            <span class="pieces">4 sets in a gift box with a ribbon</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩67,000</span>
+                            <button class="add-to-cart" data-name="Romantic Gift Set" data-price="67000" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 6 -->
+                <div class="product-card" data-id="mix-6">
+                    <div class="product-image">
+                        <div class="placeholder-img mix-img">🌴</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tropical Fusion Mix</h3>
+                        <p class="product-desc">Tropical mix: Tropical White Fusion chocolate, Mango Tango marmalade, Coconut Jelly, Tropical Paradise Mix. A taste of the exotic. 750g.</p>
+                        <div class="product-meta">
+                            <span class="weight">750g</span>
+                            <span class="pieces">4 tropical sets: mango, coconut, passion fruit, pineapple</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩48,000</span>
+                            <button class="add-to-cart" data-name="Tropical Fusion Mix" data-price="48000" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 7 -->
+                <div class="product-card" data-id="mix-7">
+                    <div class="product-image">
+                        <div class="product-badge">Hit</div>
+                        <div class="placeholder-img mix-img">☕</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Coffee & Sweets Combo</h3>
+                        <p class="product-desc">Perfect with coffee: Vienna Coffee Collection, Salted Caramel, Hazelnut Truffle chocolate + Citrus Burst marmalade. For coffee breaks. 820g.</p>
+                        <div class="product-meta">
+                            <span class="weight">820g</span>
+                            <span class="pieces">4 sets: coffee, caramel, truffle, citrus</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩54,500</span>
+                            <button class="add-to-cart" data-name="Coffee & Sweets Combo" data-price="54500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 8 -->
+                <div class="product-card" data-id="mix-8">
+                    <div class="product-image">
+                        <div class="placeholder-img mix-img">🎨</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Artisan Selection Box</h3>
+                        <p class="product-desc">Artisanal collection: Ecuador Single Origin, Pistachio Luxury chocolate + Artisan Fruit Jellies, Turkish Delight. Only handmade. 700g.</p>
+                        <div class="product-meta">
+                            <span class="weight">700g</span>
+                            <span class="pieces">4 premium artisanal sets</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩79,500</span>
+                            <button class="add-to-cart" data-name="Artisan Selection Box" data-price="79500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 9 -->
+                <div class="product-card" data-id="mix-9">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        <div class="placeholder-img mix-img">👑</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Royal Luxury Collection</h3>
+                        <p class="product-desc">Royal collection: Swiss Dark Collection, Belgian Praline Master, Italian Gianduja + French Fruit Pâtes, Wine Gummies. VIP set. 1100g.</p>
+                        <div class="product-meta">
+                            <span class="weight">1100g</span>
+                            <span class="pieces">5 elite sets in premium packaging</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩99,500</span>
+                            <button class="add-to-cart" data-name="Royal Luxury Collection" data-price="99500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mix Product 10 -->
+                <div class="product-card" data-id="mix-10">
+                    <div class="product-image">
+                        <div class="placeholder-img mix-img">🌈</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Rainbow Fun Pack</h3>
+                        <p class="product-desc">A bright mix for the whole family: Cookie Crunch, Ruby Strawberry chocolate + Rainbow Sour Worms, Gummy Bears, Watermelon Slices. Joy in every piece. 950g.</p>
+                        <div class="product-meta">
+                            <span class="weight">950g</span>
+                            <span class="pieces">5 sets: cookies, ruby, worms, bears, watermelons</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="price">₩49,500</span>
+                            <button class="add-to-cart" data-name="Rainbow Fun Pack" data-price="49500" data-category="mix">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <p>Cart is Empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">₩0</span>
+            </div>
+            <button class="checkout-button" id="checkoutButton">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+380 XX XXX XX XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" required placeholder="City, street, building, apartment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" name="payment" required>
+                            <option value="">Select payment method</option>
+                            <option value="cash">Cash on delivery</option>
+                            <option value="card">Card on delivery</option>
+                            <option value="online">Online payment</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Order Notes</label>
+                        <textarea id="notes" name="notes" placeholder="Additional preferences (optional)"></textarea>
+                    </div>
+                    <div class="order-summary">
+                        <h3>Your Order:</h3>
+                        <div id="orderItems"></div>
+                        <div class="summary-total">
+                            <span>Total:</span>
+                            <span id="orderTotal">₩0</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-order">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
